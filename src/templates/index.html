@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hybrid Engine Tracker</title>
+    <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+</head>
+<body>
+    <h1>Hybrid Engine Tracker</h1>
+    <form id="tripForm">
+        <input type="text" id="date" placeholder="Date" required>
+        <input type="number" id="odometer_start" placeholder="Odometer Start" required>
+        <input type="number" id="odometer_end" placeholder="Odometer End" required>
+        <input type="number" step="0.1" id="gallons_used" placeholder="Gallons Used" required>
+        <input type="number" step="0.1" id="mpg" placeholder="MPG" required>
+        <button type="submit">Add Trip</button>
+    </form>
+</body>
+</html>
